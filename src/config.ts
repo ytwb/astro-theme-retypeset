@@ -50,10 +50,10 @@ export const themeConfig: ThemeConfig = {
   // GLOBAL SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> START
   global: {
     // default language
-    locale: 'zh', // de, en, es, fr, ja, ko, pl, pt, ru, zh, zh-tw
+    locale: 'zh-hk', // de, en, es, fr, ja, ko, pl, pt, ru, zh, zh-tw
     // more languages
     // not fill in the locale code above again, can be an empty array []
-    moreLocales: ['en', 'es', 'ja', 'ru', 'zh-tw'], // ['de', 'en', 'es', 'fr', 'ja', 'ko', 'pl', 'pt', 'ru', 'zh', 'zh-tw']
+    moreLocales: ['en', 'zh-hk'], // ['de', 'en', 'es', 'fr', 'ja', 'ko', 'pl', 'pt', 'ru', 'zh', 'zh-tw']
     // font styles for post text
     fontStyle: 'sans', // sans, serif
     // date format for posts
@@ -70,7 +70,7 @@ export const themeConfig: ThemeConfig = {
   // COMMENT SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> START
   comment: {
     // enable comment system
-    enabled: true, // true, false
+    enabled: false, // true, false
     // giscus
     // https://giscus.app/
     giscus: {
@@ -106,40 +106,40 @@ export const themeConfig: ThemeConfig = {
   // SEO SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> START
   seo: {
     // @twitter ID
-    twitterID: '@radishzz_',
+    // twitterID: '@radishzz_',
     // site verification
-    verification: {
-      // google search console
-      // https://search.google.com/search-console
-      google: 'AUCrz5F1e5qbnmKKDXl2Sf8u6y0kOpEO1wLs6HMMmlM',
-      // bing webmaster tools
-      // https://www.bing.com/webmasters
-      bing: '64708CD514011A7965C84DDE1D169F87',
-      // yandex webmaster
-      // https://webmaster.yandex.com
-      yandex: '',
-      // baidu search
-      // https://ziyuan.baidu.com
-      baidu: '',
-    },
+    // verification: {
+    //   // google search console
+    //   // https://search.google.com/search-console
+    //   google: 'AUCrz5F1e5qbnmKKDXl2Sf8u6y0kOpEO1wLs6HMMmlM',
+    //   // bing webmaster tools
+    //   // https://www.bing.com/webmasters
+    //   bing: '64708CD514011A7965C84DDE1D169F87',
+    //   // yandex webmaster
+    //   // https://webmaster.yandex.com
+    //   yandex: '',
+    //   // baidu search
+    //   // https://ziyuan.baidu.com
+    //   baidu: '',
+    // },
     // google analytics
     // https://analytics.google.com
-    googleAnalyticsID: '',
-    // umami analytics
-    // https://cloud.umami.is
-    umamiAnalyticsID: '520af332-bfb7-4e7c-9386-5f273ee3d697',
-    // follow verification
-    // https://follow.is/
-    follow: {
-      // feed ID
-      feedID: '',
-      // user ID
-      userID: '',
-    },
-    // apiflash access key
-    // automatically generate website screenshots for open graph images
-    // get your access key at: https://apiflash.com/
-    apiflashKey: '',
+    // googleAnalyticsID: '',
+    // // umami analytics
+    // // https://cloud.umami.is
+    // umamiAnalyticsID: '520af332-bfb7-4e7c-9386-5f273ee3d697',
+    // // follow verification
+    // // https://follow.is/
+    // follow: {
+    //   // feed ID
+    //   feedID: '',
+    //   // user ID
+    //   userID: '',
+    // },
+    // // apiflash access key
+    // // automatically generate website screenshots for open graph images
+    // // get your access key at: https://apiflash.com/
+    // apiflashKey: '',
   },
   // SEO SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END
 
@@ -147,18 +147,18 @@ export const themeConfig: ThemeConfig = {
   footer: {
     // social links
     links: [
-      {
-        name: 'RSS',
-        url: '/atom.xml', // or /rss.xml
-      },
-      {
-        name: 'GitHub',
-        url: 'https://github.com/radishzzz/astro-theme-retypeset',
-      },
-      {
-        name: 'Email',
-        url: 'email@radishzz.cc',
-      },
+      // {
+      //   name: 'RSS',
+      //   url: '/atom.xml', // or /rss.xml
+      // },
+      // {
+      //   name: 'GitHub',
+      //   url: 'https://github.com/radishzzz/astro-theme-retypeset',
+      // },
+      // {
+      //   name: 'Email',
+      //   url: 'email@radishzz.cc',
+      // },
       // {
       //   name: 'X',
       //   url: 'https://x.com/radishzz_',
@@ -176,7 +176,7 @@ export const themeConfig: ThemeConfig = {
     linkPrefetch: 'viewport', // hover, tap, viewport, load
     // image hosting url
     // optimize remote images in Markdown files to avoid cumulative layout shift
-    imageHostURL: 'image.radishzz.cc',
+    // imageHostURL: 'image.radishzz.cc',
     // custom google analytics js
     // for users who route analytics javascript to a customized domain
     // See https://gist.github.com/xiaopc/0602f06ca465d76bd9efd3dda9393738
@@ -184,7 +184,7 @@ export const themeConfig: ThemeConfig = {
     // custom umami analytics js
     // for users who deploy umami on their own, or route analytics javascript to a customized domain
     // see https://github.com/umami-software/umami/discussions/1026
-    customUmamiAnalyticsJS: 'https://js.radishzz.cc/jquery.min.js',
+    // customUmamiAnalyticsJS: 'https://js.radishzz.cc/jquery.min.js',
   },
   // PRELOAD SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END
 }
